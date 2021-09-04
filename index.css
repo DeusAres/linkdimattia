@@ -1,0 +1,32 @@
+html *
+{
+   color: #000 !important;
+   font-family: Helvetica !important;
+}
+
+h1
+{
+   font-size: 40px;
+   padding-top: 50px;
+}
+
+.button
+{
+   background-color: white;
+   border: 2px solid black;
+   border-radius: 15px;
+   padding: 10px 20px;
+   font-size: 20px;
+   transition-duration: 0.5s;
+
+}
+
+.button:hover
+{
+   background-color: lightgray;
+}
+
+.button:focus
+{
+   outline: none;
+}
