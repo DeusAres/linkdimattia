@@ -10,18 +10,25 @@ h1
    padding-top: 50px;
 }
 
-soldi
+.soldi
 {
-   width: 0px;
-   height: 0px;
-   animation: float 4s;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100px;
+   height: auto;
+   animation: bubble 0.5s;
+   position: relative;
    animation-iteration-count: infinite;
+   animation-direction: alternate;
 }
 
-@keyframes float{
+@keyframes bubble {
    from {top:0px;}
-   to {top:200px;}
+   to {top:-40;}
 }
+
+
 .button
 {
    background-color: white;
