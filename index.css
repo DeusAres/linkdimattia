@@ -24,6 +24,12 @@ h1
 
 
   animation: float linear 2s;
+   
+   animation-direction: alternate;
+   -webkit-animation-direction: alternate;
+   -moz-animation-direction: alternate;
+   -o-animation-direction: alternate;
+   -ms-animation-direction: alternate;
 
   animation-iteration-count: infinite;
 
