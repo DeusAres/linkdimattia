@@ -1,7 +1,6 @@
 let oLink = document.querySelector('.oldLink');
 let nLink = document.querySelector('.newlink');
 let generate = document.querySelector('.generate');
-let copy = document.querySelector('.copy')
 let oldLink = null
 
 if (oLink != null){
@@ -26,14 +25,5 @@ generate.addEventListener("click",()=>{
     let link = "https://www.amazon.it/dp/";
     let newLinkTemp = link.concat(asin, ref).concat("", asin);
     nLink.innerHTML = newLinkTemp;
-});
-
-copy.addEventListener("click",()=>{
-    alert("New link ready, thanks for the money");
-    nLink.select();
-    nLink.setSelectionRange(0, 9999);
-
-    navigator.clipboard.writeText(newLink.value);
-
 });
 
