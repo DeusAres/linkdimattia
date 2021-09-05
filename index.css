@@ -25,11 +25,11 @@ h1
 
   animation: float linear 2s;
    
-   animation-direction: alternate;
-   -webkit-animation-direction: alternate;
-   -moz-animation-direction: alternate;
-   -o-animation-direction: alternate;
-   -ms-animation-direction: alternate;
+   animation-direction: alternate-reverse;
+   -webkit-animation-direction: alternate-reverse;
+   -moz-animation-direction: alternate-reverse;
+   -o-animation-direction: alternate-reverse;
+   -ms-animation-direction: alternate-reverse;
 
   animation-iteration-count: infinite;
 
