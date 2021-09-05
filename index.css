@@ -29,7 +29,7 @@ h1
 }
 
 
-.button
+.generate
 {
    background-color: white;
    border: 2px solid black;
@@ -40,12 +40,12 @@ h1
 
 }
 
-.button:hover
+.generate:hover
 {
    background-color: lightgray;
 }
 
-.button:focus
+.generate:focus
 {
    outline: none;
 }
