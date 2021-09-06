@@ -1,9 +1,9 @@
 let oLink = document.querySelector('.oldLink');
-let nLink = document.querySelector('.newlink');
 let generate = document.querySelector('.generate');
-let paste = document.querySelector('.paste')
+let paste = document.querySelector('.paste');
+let moneyAudio = new Audio('ka-ching.mp3');
 let oldLink = null
-oLink.value = "CACAA"
+oLink.value = "$INCOLLADIOLADRO$"
 if (oLink != null){
     oLink.addEventListener("change",()=>{
         oldLink = oLink.value;
@@ -17,6 +17,7 @@ paste.addEventListener("click",()=>{
         console.log(err)
     });
 });
+
 function getAsinIndex(oldLink, index){
     for (let j = index; j <= index || j < oldLink.lenght; j++){
         if ((oldLink[j].charCodeAt(0) >= 48 && oldLink[j].charCodeAt(0) <= 57) 
@@ -42,5 +43,6 @@ generate.addEventListener("click",()=>{
     let ref = "/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=bambv-33&creative=33718&linkCode=as2&creativeASIN=";
     let link = "https://www.amazon.it/dp/";
     let newLinkTemp = link.concat(asin, ref).concat("", asin);
+    moneyAudio.play()
     window.open(newLinkTemp, "").focus()
 });
