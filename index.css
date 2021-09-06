@@ -1,229 +1,119 @@
 html *
 {
-   color: #000 !important;
-   font-family: Helvetica !important;
+    color: #000 !important;
+    font-family: Helvetica !important;
 }
-
+body{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(background.jpg);
+    background-size: cover;
+    
+}
 h1
 {
-   font-size: 40px;
-   padding-top: 50px;
+    font-size: 40px;
+    padding-top: 50px;
 }
-
 .soldi
 {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 100px;
-   height: auto;
-
-   position: relative;
-
-
-
-
-  animation: float linear 2s;
-   
-   animation-direction: alternate-reverse;
-   -webkit-animation-direction: alternate-reverse;
-   -moz-animation-direction: alternate-reverse;
-   -o-animation-direction: alternate-reverse;
-   -ms-animation-direction: alternate-reverse;
-
-  animation-iteration-count: infinite;
-
-  transform-origin: 50% 50%;
-
-  -webkit-animation: float linear 2s;
-
-  -webkit-animation-iteration-count: infinite;
-
-  -webkit-transform-origin: 50% 50%;
-
-  -moz-animation: float linear 2s;
-
-  -moz-animation-iteration-count: infinite;
-
-  -moz-transform-origin: 50% 50%;
-
-  -o-animation: float linear 2s;
-
-  -o-animation-iteration-count: infinite;
-
-  -o-transform-origin: 50% 50%;
-
-  -ms-animation: float linear 2s;
-
-  -ms-animation-iteration-count: infinite;
-
-  -ms-transform-origin: 50% 50%;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: auto;
+    position: relative;
+    animation: doIt 2s linear 0s infinite alternate;
+    /* animation: rotate 1s linear 0s infinite alternate, float 1s linear 0s infinite alternate; */
+    /* animation: rotate 1s linear 0s infinite alternate, float 1s linear; */
+    
 }
-
-@keyframes float{
-
-  0% {
-
-    transform:  translate(0px,0px)  rotate(0deg) ;
-
-  }
-
-  21% {
-
-    transform:  translate(0px,40px)  rotate(45deg) ;
-
-  }
-
-  39% {
-
-    transform:  translate(0px,-40px)  rotate(-45deg) ;
-
-  }
-
-  100% {
-
-    transform:  translate(0px,-40px)  rotate(-45deg) ;
-
-  }
-
+@keyframes doIt{
+    0% {
+        transform:  translate(0px,0px) rotate(-45deg);
+    }
+    25% {
+        transform:  translate(0px,-20px) rotate(45deg);
+    }
+    50% {
+        transform:  translate(0px,-40px) rotate(-45deg);
+    }
+    75% {
+        transform:  translate(0px,-20px) rotate(45deg);
+    }
+    100% {
+        transform:  translate(0px,0px) rotate(-45deg);
+    }
 }
 
 @-moz-keyframes float{
-
-  0% {
-
-    -moz-transform:  translate(0px,0px)  rotate(0deg) ;
-
-  }
-
-  21% {
-
-    -moz-transform:  translate(0px,40px)  rotate(45deg) ;
-
-  }
-
-  39% {
-
-    -moz-transform:  translate(0px,-40px)  rotate(-45deg) ;
-
-  }
-
-  100% {
-
-    -moz-transform:  translate(0px,-40px)  rotate(-45deg) ;
-
-  }
-
+    0% {
+        -moz-transform:  translate(0px,0px)  rotate(0deg) ;
+    }
+    33% {
+        -moz-transform:  translate(0px,40px)  rotate(45deg) ;
+    }
+    66% {
+        -moz-transform:  translate(0px,-40px)  rotate(-45deg) ;
+    }
+    100% {
+        -moz-transform:  translate(0px,-40px)  rotate(-45deg) ;
+    }
 }
-
 @-webkit-keyframes float {
-
-  0% {
-
-    -webkit-transform:  translate(0px,0px)  rotate(0deg) ;
-
-  }
-
-  21% {
-
-    -webkit-transform:  translate(0px,40px)  rotate(45deg) ;
-
-  }
-
-  39% {
-
-    -webkit-transform:  translate(0px,-40px)  rotate(-45deg) ;
-
-  }
-
-  100% {
-
-    -webkit-transform:  translate(0px,-40px)  rotate(-45deg) ;
-
-  }
-
+    0% {
+        -webkit-transform:  translate(0px,0px)  rotate(0deg) ;
+    }
+    33% {
+        -webkit-transform:  translate(0px,40px)  rotate(45deg) ;
+    }
+    66% {
+        -webkit-transform:  translate(0px,-40px)  rotate(-45deg) ;
+    }
+    100% {
+        -webkit-transform:  translate(0px,-40px)  rotate(-45deg) ;
+    }
 }
-
 @-o-keyframes float {
-
-  0% {
-
-    -o-transform:  translate(0px,0px)  rotate(0deg) ;
-
-  }
-
-  21% {
-
-    -o-transform:  translate(0px,40px)  rotate(45deg) ;
-
-  }
-
-  39% {
-
-    -o-transform:  translate(0px,-40px)  rotate(-45deg) ;
-
-  }
-
-  100% {
-
-    -o-transform:  translate(0px,-40px)  rotate(-45deg) ;
-
-  }
-
+    0% {
+        -o-transform:  translate(0px,0px)  rotate(0deg) ;
+    }
+    33% {
+        -o-transform:  translate(0px,40px)  rotate(45deg) ;
+    }
+    66% {
+        -o-transform:  translate(0px,-40px)  rotate(-45deg) ;
+    }
+    100% {
+        -o-transform:  translate(0px,-40px)  rotate(-45deg) ;
+    }
 }
-
 @-ms-keyframes float {
-
-  0% {
-
-    -ms-transform:  translate(0px,0px)  rotate(0deg) ;
-
-  }
-
-  21% {
-
-    -ms-transform:  translate(0px,40px)  rotate(45deg) ;
-
-  }
-
-  39% {
-
-    -ms-transform:  translate(0px,-40px)  rotate(-45deg) ;
-
-  }
-
-  100% {
-
-    -ms-transform:  translate(0px,-40px)  rotate(-45deg) ;
-
-  }
-
+    0% {
+        -ms-transform:  translate(0px,0px)  rotate(0deg) ;
+    }
+    33% {
+        -ms-transform:  translate(0px,40px)  rotate(45deg) ;
+    }
+    66% {
+        -ms-transform:  translate(0px,-40px)  rotate(-45deg) ;
+    }
+    100% {
+        -ms-transform:  translate(0px,-40px)  rotate(-45deg) ;
+    }
 }
-
-
-
-
-
-
-
 .generate
 {
-   background-color: white;
-   border: 2px solid black;
-   border-radius: 15px;
-   padding: 10px 20px;
-   font-size: 20px;
-   transition-duration: 0.5s;
-
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition-duration: 0.5s;
 }
-
 .generate:hover
 {
-   background-color: lightgray;
+    background-color: lightgray;
 }
-
 .generate:focus
 {
-   outline: none;
+    outline: none;
 }
