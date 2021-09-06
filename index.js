@@ -3,7 +3,7 @@ let generate = document.querySelector('.generate');
 let paste = document.querySelector('.paste');
 let moneyAudio = new Audio('ka-ching.mp3');
 let oldLink = null
-oLink.value = "$INCOLLADIOLADRO$"
+
 if (oLink != null){
     oLink.addEventListener("change",()=>{
         oldLink = oLink.value;
