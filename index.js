@@ -19,11 +19,11 @@ paste.addEventListener("click",()=>{
 });
 
 function getAsinIndex(oldLink, index){
-    for (let j = index; j <= index || j < oldLink.lenght; j++){
+    for (let j = index; j < index+10 || j < oldLink.lenght; j++){
         if ((oldLink[j].charCodeAt(0) >= 48 && oldLink[j].charCodeAt(0) <= 57) 
             || oldLink[j].charCodeAt(0) >= 65 && oldLink[j].charCodeAt(0) <= 90){
-            if (j == index){
-                return j;
+            if (j == index+9){
+                return index;
             }
         }else{
             break;
@@ -33,7 +33,7 @@ function getAsinIndex(oldLink, index){
 };
 generate.addEventListener("click",()=>{
     let index = null;
-    for (let i = 69; i < oldLink.length || index != 0; i++){
+    for (let i = 0; i < oldLink.length || index != 0; i++){
         index = getAsinIndex(oldLink, i)
         if (index != null){
             break;
@@ -46,3 +46,7 @@ generate.addEventListener("click",()=>{
     moneyAudio.play()
     window.open(newLinkTemp, "").focus()
 });
+
+
+
+
