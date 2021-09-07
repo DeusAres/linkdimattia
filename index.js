@@ -40,8 +40,8 @@ generate.addEventListener("click",()=>{
         }
     }
     let asin = oldLink.substring(index, index+10);
-    let ref = "/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=bambv-33&creative=33718&linkCode=as2&creativeASIN=";
     let link = "https://www.amazon.it/dp/";
+    let ref = "/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=bambv-21&creative=21718&linkCode=as2&creativeASIN=";
     let newLinkTemp = link.concat(asin, ref).concat("", asin);
     moneyAudio.play()
     window.open(newLinkTemp, "").focus()
